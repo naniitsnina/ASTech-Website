@@ -1,0 +1,682 @@
+/* General */
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight:
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.entry-content {
+    margin: 0;
+}
+
+.site-main {
+    margin: auto;
+    max-width: 100%;
+}
+
+body {
+    /*
+	background-image: linear-gradient(to right,#0e1053,#373995)!important; */
+    background: #0e1053 url(https://wp-astech.kylesicotte.me/wp-content/uploads/2022/07/Nomination-Section-Left.svg) no-repeat fixed;
+}
+
+.wp-block-button__link {
+    background: linear-gradient(30deg, rgb(90, 24, 154) 0%, rgb(36, 0, 70) 100%);
+    border-radius: 5px;
+}
+
+/* Navbar */
+.site-logo {
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.site-logo img {
+    max-width: 160px;
+}
+
+header.site-header {
+    box-shadow: 0 3px 15px #0002;
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    background: #fff;
+}
+
+header nav.main-navigation {
+    box-shadow: 0 0 10px #0003;
+}
+
+header nav.main-navigation .nav-container {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1640px;
+    padding: 0 20px;
+    margin: auto;
+    text-align: center;
+}
+
+header nav.main-navigation .desktop-menus {
+    margin: auto 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+header nav.main-navigation .desktop-menus>div:first-child {
+    margin-right: 50px;
+}
+
+header nav.main-navigation .desktop-menus a {
+    transition: .2s ease-in-out;
+}
+
+header nav.main-navigation .desktop-menus a:hover {
+    color: #cead63;
+}
+
+header nav.main-navigation .desktop-menus .sub-menu {
+    background-color: #fff;
+    margin-top: 32px;
+    border: 0;
+    border-top: 1px solid #3333;
+}
+
+#wprmenu_bar {
+    box-shadow: 0 0 10px #0003;
+    padding: 0 10px;
+}
+
+#wprmenu_bar .menu_title {
+    color: #000;
+}
+
+#wprmenu_bar .menu_title>a {
+    display: block;
+    width: 200px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+#wprmenu_bar .hamburger-box {
+    margin-top: 5px;
+}
+
+#wprmenu_bar .hamburger-inner,
+#wprmenu_bar .hamburger-inner:before,
+#wprmenu_bar .hamburger-inner:after {
+    height: 1px;
+}
+
+@media only screen and (min-width: 600px) {
+    #wprmenu_bar {
+        padding: 0 40px;
+    }
+}
+
+/* Homepage Slideshow */
+.metaslider {
+    margin-top: 0 !important;
+}
+
+body .metaslider .flexslider .slides li {
+    height: calc(100vh - 90px);
+}
+
+body .metaslider .flexslider .slides img {
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.metaslider .caption-wrap {
+    background-color: #0006 !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.metaslider .caption-wrap .caption {
+    max-height: 100% !important;
+    transform: translatey(0);
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.metaslider .caption-wrap .caption p {
+    text-shadow: 0 0 20px #000;
+    font-size: 2rem;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #eee;
+    display: flex;
+}
+
+.flex-control-nav {
+    bottom: 10rem !important;
+}
+
+.metaslider .caption-wrap .caption h2 {
+    text-shadow: 0 0 20px #000;
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 1.5vh;
+}
+
+.metaslider .caption-wrap .caption h2 {
+    text-shadow: 0 0 20px #000;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 900;
+    padding-bottom: 1.5vh;
+}
+
+@media only screen and (min-width: 1024px) {
+    .metaslider .caption-wrap .caption h2 {
+        font-size: 80px;
+    }
+
+    .metaslider .caption-wrap .caption p {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    #wprmenu_bar {
+        display: none;
+    }
+}
+
+/*Container Groups  */
+.section .wp-block-group__inner-container {
+    padding: 2rem 5rem;
+}
+
+/*What are the ASTech awards  */
+.what-are-the-astech-awards {
+    background: #ffffff url(https://wp-astech.kylesicotte.me/wp-content/uploads/2022/07/What-Section-Left.svg) no-repeat bottom left;
+    border-radius: 7vw 0 7vw 0;
+    position: relative;
+    bottom: 10rem;
+}
+
+.what-are-the-astech-awards-content .wp-block-group__inner-container {
+    display: flex;
+    padding: 0;
+}
+
+
+.what-are-the-astech-awards-content .wp-block-group__inner-container .wp-container-1.wp-block-group {
+    width: 100%;
+}
+
+
+
+/*Award categories  */
+.award-categories {
+    color: #ffffff;
+    position: relative;
+    bottom: 5rem;
+}
+
+.award-categories p {
+    width: 50vw;
+}
+
+.award-categories img {
+    width: 50vw;
+    position: absolute;
+    right: -12rem;
+    top: -13rem;
+    z-index: -1
+}
+
+/*Become a Sponsor  */
+.become-a-sponsor {
+    background: #ffffff url(https://wp-astech.kylesicotte.me/wp-content/uploads/2022/07/What-Section-Right.svg) no-repeat top right;
+    height: 50vh;
+    border-radius: 7vw 0 7vw 0;
+    display: flex;
+    align-items: center;
+}
+
+.become-a-sponsor p {
+    margin: 2rem 0;
+}
+
+/*Previous Winners  */
+.previous-winners {
+    color: #ffffff;
+
+}
+
+
+
+/*Nominate Someone  */
+.entry-title {
+    display: none;
+}
+
+.wp-container-1.wp-block-group.page-title-description {
+    color: #ffffff;
+}
+
+.wp-container-1.wp-block-group.page-title-description {
+    position: relative;
+    bottom: 30rem;
+    margin: 0 0 0 5rem;
+}
+
+p.help-participate {
+    font-family: 'Playfair Display', 'sans-serif';
+    margin: 0;
+}
+
+p.nominate-someone {
+    margin: 2.5rem 0;
+}
+
+.wp-block-image.size-large.nominate-image img {
+    opacity: 0.5;
+    width: 100%;
+}
+
+/* Submit a nomination */
+
+.nominate>.wp-block-group__inner-container {
+    background: #ffffff;
+    border-radius: 10vw 0 10vw 0;
+    padding: 5rem 10rem;
+    position: relative;
+    bottom: 20rem;
+}
+
+p.nominate-someone-for-an-award {
+    font-family: 'Playfair Display', 'sans-serif';
+    color: #373995;
+    margin: 1rem 0;
+}
+
+p.submit-a-nomination {
+    margin: 2rem 0;
+    font-size: 59px !important;
+}
+
+
+/*Upload a video  */
+.wp-container-19.wp-block-group.upload-links {
+    margin: 5rem;
+}
+
+.wp-container-18.wp-block-columns.awards {
+    gap: 1rem;
+}
+
+/*Login to nominate  */
+.cta>div {
+    color: #ffffff;
+    padding: 0 0 5rem 0;
+    position: relative;
+    bottom: 10rem;
+    height: 10vh;
+}
+
+.cta-header {
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 55px;
+}
+
+.cta p {
+    font-size: 23px;
+    margin: 0 0 2.5rem 0;
+}
+
+.cta-button {
+    margin-right: 10px;
+}
+
+.cta-button:first-child {
+    justify-content: flex-end;
+}
+
+.cta-button:nth-child(2) {
+    justify-content: flex-start;
+}
+
+
+/* Footer Styling */
+
+#page>footer .footer-container .footer-box {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+#page>footer {
+    box-sizing: border-box;
+    margin-top: 200px;
+    position: relative;
+    background: rgb(36, 0, 100);
+    background: -moz-linear-gradient(0deg, rgba(36, 0, 100, 1) 0%, rgba(55, 57, 149, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(36, 0, 100, 1) 0%, rgba(55, 57, 149, 1) 100%);
+    background: linear-gradient(0deg, rgba(36, 0, 100, 1) 0%, rgba(55, 57, 149, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#240064", endColorstr="#373995", GradientType=1);
+    margin-top: 50px;
+    border-radius: 50px 0 0 0;
+    padding: 0 50px;
+}
+
+#page>footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 0 60px;
+    position: relative;
+    max-width: 100%;
+}
+
+#page>footer .footer-box {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#page>footer .footer-box .menu {
+    margin: 0;
+}
+
+#page>footer .footer-box .footer-logo {
+    background: url('https://wp-astech.kylesicotte.me/wp-content/uploads/2022/07/ASTech-White.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-height: 60px;
+    margin: 0;
+}
+
+#page>footer .footer-box #social-menu {
+    display: flex;
+    margin: 20px 0 0;
+}
+
+#page>footer .footer-box #social-menu li {
+    background: #fff;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#page>footer .footer-box #social-menu li i {
+    margin-top: 4px;
+    color: #240046
+}
+
+#page>footer .footer-left {
+    text-align: left;
+}
+
+#page>footer .footer-right {
+    text-align: right;
+    margin: auto;
+}
+
+#page>footer .footer-right p {
+    margin: 3px;
+}
+
+#page>footer .footer-right .copyright {
+    text-align: right;
+    margin: auto;
+    padding: 0;
+}
+
+#page>footer .footer-right .links a {
+    color: #f0d6ff;
+}
+
+#page>footer .footer-right .links a:hover {
+    color: #cead63;
+}
+
+#page>footer .footer-container .footer-box div,
+#page>footer .footer-container .footer-box p {
+    width: 100%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    #page>footer .footer-container {
+        display: block;
+    }
+
+    #page>footer .footer-right,
+    #page>footer .footer-left {
+        text-align: center;
+        margin: auto;
+    }
+
+    #page>footer .footer-right {
+        margin-top: 40px;
+    }
+
+    #page>footer .footer-left .footer-logo {
+        margin: auto;
+        background-position: center;
+    }
+
+    #page>footer .footer-right .copyright {
+        text-align: center;
+    }
+
+    #page>footer .footer-container .footer-box div,
+    #page>footer .footer-container .footer-box p {
+        text-align: center;
+        margin: auto;
+    }
+
+    #page>footer .footer-box #social-menu {
+        justify-content: center;
+    }
+}
+
+#mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item a:hover {
+    background: rgb(90, 24, 154);
+    background: -moz-linear-gradient(90deg, rgba(90, 24, 154, 1) 0%, rgba(36, 0, 70, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(90, 24, 154, 1) 0%, rgba(36, 0, 70, 1) 100%);
+    background: linear-gradient(90deg, rgba(90, 24, 154, 1) 0%, rgba(36, 0, 70, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5a189a", endColorstr="#240046", GradientType=1);
+    color: #fff !important;
+    box-shadow: inset 0 0 10px #0007;
+}
+
+#mg-wprm-wrap li.current-menu-item .icon_default.wprmenu_icon_par:before {
+    color: #240046 !important;
+}
+
+#mg-wprm-wrap li.current-menu-item>a {
+    box-shadow: inset 0 0 10px #0003;
+    background: rgb(240, 214, 255);
+    color: #240046 !important;
+    background: -moz-linear-gradient(270deg, rgba(240, 214, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(240, 214, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(270deg, rgba(240, 214, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0d6ff", endColorstr="#ffffff", GradientType=1);
+}
+
+.footer-twitter-feed {
+    position: absolute;
+    top: -213px;
+    left: 0;
+}
+
+.footer-twitter-feed .juicer-feed {
+    display: flex;
+    overflow-x: scroll;
+    width: 100vw;
+}
+
+.footer-twitter-feed .juicer-feed .juicer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 257px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: 0;
+    background-color: #fff;
+    position: static;
+    z-index: 1;
+    color: #373995;
+    font-size: 20px;
+    box-shadow: 0 0 #0007 10px;
+}
+
+.footer-twitter-feed .juicer-feed .referral {
+    display: none;
+}
+
+.footer-twitter-feed .juicer-feed .galcolumn {
+    display: flex !important;
+}
+
+.footer-twitter-feed .juicer-feed .j-stacker {
+    margin: 0;
+    display: flex;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.footer-twitter-feed .juicer-feed .j-stacker::-webkit-scrollbar {
+    display: none;
+}
+
+.footer-twitter-feed .juicer-feed li.feed-item {
+    box-sizing: border-box;
+    min-width: 80vw;
+    margin: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0007;
+    border-style: none !important;
+}
+
+.footer-twitter-feed .juicer-feed li:first-child {
+    margin-left: 20px;
+}
+
+.footer-twitter-feed .juicer-feed .feed-item {
+    position: relative;
+    max-height: 300px;
+}
+
+/* Twitter Message Top */
+.j-twitter-display-name {
+    color: #373995;
+}
+
+/* Twitter Feed Message */
+.footer-twitter-feed .juicer-feed .feed-item .j-text {
+    max-height: 200px;
+    padding: 10px 20px 55px !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.footer-twitter-feed .juicer-feed .feed-item .j-text::-webkit-scrollbar {
+    display: none;
+}
+
+.footer-twitter-feed .juicer-feed .feed-item .j-message p {
+    margin-bottom: 0;
+}
+
+/* Twitter Feed Bottom */
+.footer-twitter-feed .juicer-feed .feed-item .j-meta {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    background-color: #373995;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+/*
+tbody tr td:first-child:before {
+	content: "honouree"
+}
+tbody tr td:nth-child(2):before {
+	content: "year"
+}
+*/
+
+
+
+
+/*  Terms of Service */
+
+.terms-of-service-container {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 9), rgba(240, 214, 255, 5));
+    width: 100%;
+    padding: 1rem;
+}
+
+.terms-of-service-container h3 {
+    text-align: center;
+    /* 	font does not change */
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+}
+
+.terms-of-service-container h3:nth-of-type(2) {
+    font-style: italic;
+}
+
+.effective-date {
+    font-style: italic;
+}
+
+@media only screen and (min-width: 1024px) {
+    .terms-of-service-container {
+        border-radius: 1rem;
+        /* 		width: 80%; */
+
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+
+    /*  Privacy Policy */
+    .privacy-policy-container {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 9), rgba(240, 214, 255, 5));
+        /* 	width:  80%; */
+        margin: 0 auto;
+        /* 	color:#FFF; */
+        padding: 2rem;
+    }
+
+    .privacy-policy-container .effective-date {
+        font-weight: 700;
+    }
+}

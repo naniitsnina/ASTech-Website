@@ -1,0 +1,320 @@
+/* General */
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', 'sans-serif';
+	font-weight: 
+}
+
+html {
+	overflow-x: hidden;
+}
+
+.entry-content {
+	margin: 0;
+}
+
+.site-main{
+	margin: auto;
+	max-width: 100%;
+}
+
+body{
+/*
+	background-image: linear-gradient(to right,#0e1053,#373995)!important; */
+	background: #0e1053 url(https://wp-astech.kylesicotte.me/wp-content/uploads/2022/07/Nomination-Section-Left.svg) no-repeat fixed; 
+}
+
+.wp-block-button__link{
+	background: linear-gradient(25deg,rgb(90,24,154) 0%,rgb(36,0,70) 100%) ;
+	border-radius: 5px;
+}
+
+
+/* Homepage Slideshow */
+body .metaslider .flexslider .slides li {
+	height: calc(100vh - 90px);
+}
+body .metaslider .flexslider .slides img {
+	height: 100% !important;
+	object-fit: cover;
+}
+.metaslider .caption-wrap {
+	background-color: #0006 !important;
+}
+.metaslider .caption-wrap .caption {
+	height: auto !important;
+}
+.metaslider .caption-wrap .caption p {
+	text-shadow: 0 0 20px #000;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #eee;
+}
+.flex-control-nav{
+	bottom: 10rem !important;
+}
+
+.metaslider .caption-wrap .caption h2 {
+	text-shadow: 0 0 20px #000;
+	font-size: 4rem;
+	font-weight: 900;
+	padding-bottom: 1.5vh;
+}
+/*Container Groups  */
+.section .wp-block-group__inner-container{
+	padding: 2rem 5rem;
+}
+
+/*What are the ASTech awards  */
+.what-are-the-astech-awards{
+	background: #ffffff;
+	border-radius: 7vw 0 7vw 0;
+	position: relative;
+	bottom: 10rem;
+}
+
+.what-are-the-astech-awards-content .wp-block-group__inner-container{
+	display: flex;
+	padding: 0;
+}
+
+.what-are-the-astech-awards-content .wp-block-group__inner-container .wp-block-group > *{
+	width: 50%;
+}
+
+.what-are-the-astech-awards-content .wp-block-group__inner-container .wp-container-1.wp-block-group{
+	width: 100%;
+}
+
+
+/*Award categories  */
+.award-categories{
+	color: #ffffff;
+	position: relative;
+	bottom: 5rem;
+}
+
+.award-categories p{
+	width: 50vw;
+}
+
+.award-categories img{
+	width: 50vw;
+	position: absolute;
+	right: -12rem;
+	top: -13rem;
+	z-index: -1
+}
+
+/*Become a Sponsor  */
+.become-a-sponsor{
+	background: #ffffff;
+	border-radius: 10vw 0 10vw 0;
+}
+
+/*Previous Winners  */
+.previous-winners{
+	color: #ffffff;
+	height: 90vh;
+}
+
+/*Nominate Someone  */
+.entry-title{
+	display: none;
+}
+
+.wp-container-1.wp-block-group.page-title-description{
+	color: #ffffff;
+}
+
+.wp-container-1.wp-block-group.page-title-description{
+	position: relative;
+	bottom: 30rem;
+	margin: 0 0 0 2rem;
+}
+
+p.help-participate{
+	font-family: 'Playfair Display', 'sans-serif';
+	margin: 0;
+}
+p.nominate-someone{
+	margin: 2.5rem 0;
+}
+
+.wp-block-image.size-large.nominate-image img{
+	opacity: 0.5;
+	width: 100%;
+}
+
+/* Submit a nomination */
+
+.nominate > .wp-block-group__inner-container{
+	background: #ffffff;
+	border-radius: 10vw 0 10vw 0;
+	padding: 5rem 10rem;
+	position: relative;
+	bottom: 20rem;
+}
+
+p.nominate-someone-for-an-award{
+	font-family: 'Playfair Display', 'sans-serif';
+	color: #373995;
+	margin: 1rem 0;
+} 
+
+p.submit-a-nomination{
+	margin: 2rem 0;
+	font-size: 59px !important;
+}
+
+
+/*Upload a video  */
+.wp-container-19.wp-block-group.upload-links{
+	margin: 5rem;
+}
+
+.wp-container-18.wp-block-columns.awards{
+	gap: 1rem;
+}
+
+/*Login to nominate  */
+.wp-container-26.wp-block-group.login-to-nominate-someone{
+	color: #ffffff;
+	padding: 0 0 5rem 0;
+	position: relative;
+	bottom: 10rem;
+	height: 10vh;
+	
+}
+
+.login-to-nominate-someone-header{
+	margin: 1rem 0;
+}
+
+.wp-block-buttons.is-content-justification-center.login{
+	justify-content: flex-end;
+}
+
+.wp-block-buttons.is-content-justification-center.sign-up{
+	justify-content: flex-start;
+}
+.wp-container-25.wp-block-columns.login-sign-up-buttons{
+	gap: 1rem;
+}
+
+
+/* Juicer Feed Styling */
+
+.footer-twitter-feed {
+	position: absolute;
+	top: -248px;
+	left: 0;
+
+}
+.footer-twitter-feed .juicer-feed {
+	display: flex;
+	overflow-x: scroll;
+	width: 100vw;
+}
+.footer-twitter-feed .juicer-feed .juicer-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 200px;
+	max-height: 257px;
+	margin-top: 10px;
+	margin-right: 20px;
+	border: 0;
+	background-color: #373995;
+	position: static;
+	z-index: 1;
+	color: #fff;
+	font-size: 20px;
+}
+.footer-twitter-feed .juicer-feed  .referral{
+	display: none;
+}
+
+.footer-twitter-feed .juicer-feed .galcolumn {
+	display: flex !important;
+
+}
+
+.footer-twitter-feed .juicer-feed .j-stacker {
+	margin: 0;
+	display: flex;
+	-ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.footer-twitter-feed .juicer-feed .j-stacker::-webkit-scrollbar {
+	display: none;
+}
+.footer-twitter-feed .juicer-feed li.feed-item {
+	box-sizing: border-box;
+	min-width: 80vw;
+	margin: 10px 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #0003;
+}
+.footer-twitter-feed .juicer-feed li:first-child {
+	margin-left: 20px;
+}
+.footer-twitter-feed .juicer-feed  .feed-item {
+	position: relative;
+	max-height: 300px;
+}
+
+/* Twitter Feed Message */
+.footer-twitter-feed .juicer-feed  .feed-item .j-text {
+	max-height: 200px;
+	padding: 10px 20px 55px !important;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.footer-twitter-feed .juicer-feed  .feed-item .j-text::-webkit-scrollbar {
+	display: none;
+}
+.footer-twitter-feed .juicer-feed  .feed-item .j-message p {
+	margin-bottom: 0;
+}
+
+/* Twitter Feed Bottom */
+.footer-twitter-feed .juicer-feed  .feed-item .j-meta {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	background-color: #373995;
+	padding: 20px;
+	border-radius: 0 0 10px 10px;
+}
+
+footer {
+	box-sizing: border-box;
+	margin-top: 200px;
+}
+.footer-container {
+	position: relative;
+	max-width: 100%;
+}
+.footer-container .footer-box {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+}
+
+/*
+tbody tr td:first-child:before {
+	content: "honouree"
+}
+tbody tr td:nth-child(2):before {
+	content: "year"
+}
+*/
+
